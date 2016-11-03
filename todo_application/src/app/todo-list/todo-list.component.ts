@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TodoListComponent implements OnInit {
 
+  todos: string[];
+
   constructor() { }
 
   ngOnInit() {
+    this.todos = [
+      "Finish this app!",
+      "Watch the rest of the presentations!",
+      "???",
+      "Profit (Pizza & Beer)"
+    ];
   }
 
 }

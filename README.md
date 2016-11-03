@@ -7,16 +7,13 @@ We will be creating the shell for small **TODO** application from scratch with t
 
 ## What we are going to do:
 
-1. Use component to display data
-    * Maybe a second component or a service or something? No Problem!
-    * Also run unit tests!!
-2. Use service in component
+1. Use service in component
     * Short detour into how to use dependency injection
     * Create data in service 
-3. Create a **todo-detail** component in a second project
+2. Create a **todo-detail** component in a second project
     * Switch to [kd-angular2-components](https://github.com/mnieratschker/kd-angular2-components)
-4. Get components from external project
-5. Use todo-detail component
+3. Get components from external project
+4. Use todo-detail component
 
 ### Extra
 
@@ -51,3 +48,35 @@ We will be creating the shell for small **TODO** application from scratch with t
     ```
     ng g component todo-list
     ```
+1. Use component to display data
+    * Add component to the AppModule
+    ```javascript
+    import { TodoListComponent } from './todo-list/todo-list.component';
+    
+    ...
+
+    declarations: [
+        AppComponent,
+        TodoListComponent
+    ]
+    ```
+    * Add component to html
+    ```html
+    <app-todo-list></app-todo-list>
+    ```
+    * Add some data in the component
+    * Bind to data in component html
+    ```html
+    <div *ngFor="let todo of todos">
+        {{todo}}
+    </div>
+    ```
+    * Create service with Angular-CLI
+    ```
+    ng g service services/todo-retrieval
+    ```
+    * Run unit tests with Angular-CLI
+    ```
+    ng test
+    ```
+    * Fix the tests!!!
