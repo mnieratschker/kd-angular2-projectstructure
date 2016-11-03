@@ -7,18 +7,17 @@ We will be creating the shell for small **TODO** application from scratch with t
 
 ## What we are going to do:
 
-3. Start a webserver
-4. Create a **todo-list** component with Angular-CLI
-0. Use component to display data
+1. Create a **todo-list** component with Angular-CLI
+2. Use component to display data
     * Maybe a second component or a service or something? No Problem!
     * Also run unit tests!!
-0. Use service in component
+3. Use service in component
     * Short detour into how to use dependency injection
     * Create data in service 
-0. Create a **todo-detail** component in a second project
+4. Create a **todo-detail** component in a second project
     * Switch to [kd-angular2-components](https://github.com/mnieratschker/kd-angular2-components)
-0. Get components from external project
-0. Use todo-detail component
+5. Get components from external project
+6. Use todo-detail component
 
 ### Extra
 
@@ -30,14 +29,21 @@ We will be creating the shell for small **TODO** application from scratch with t
 
 1. Look up Angular-CLI [(on the webs)](https://github.com/angular/angular-cli) and install it
     * Use npm to install the Angular-CLI 
-```
-npm install -g angular-cli
-```
-2. Initialize a project with Angular-CLI
+    ```
+    npm install -g angular-cli
+    ```
+1. Initialize a project with Angular-CLI
     * Use Angular-CLI in command line (4 real)
-```
-ng new todo_application 
+    ```
+    ng new todo_application 
 
-// for presentation purpose 
-ng new todo_application --skip-npm
-``` 
+    // for presentation purpose 
+    ng new todo_application --skip-npm
+    ``` 
+1. Start a webserver
+    * Run command
+    ```
+    ng serve
+    ```
+    * Open browser on URL
+    [http://localhost:4200/](http://localhost:4200/)
