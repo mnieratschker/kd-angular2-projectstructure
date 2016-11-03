@@ -7,7 +7,6 @@ We will be creating the shell for small **TODO** application from scratch with t
 
 ## What we are going to do:
 
-1. Look up Angular-CLI [(on the webs)](https://github.com/angular/angular-cli) and install it 
 2. Initialize a project with Angular-CLI
 3. Start a webserver
 4. Create a **todo-list** component with Angular-CLI
@@ -30,4 +29,8 @@ We will be creating the shell for small **TODO** application from scratch with t
 
 ## What is finished:
 
-**_Nothing :(_**
+1. Look up Angular-CLI [(on the webs)](https://github.com/angular/angular-cli) and install it
+    * Use npm to install the Angular-CLI 
+```
+npm install -g angular-cli
+```
