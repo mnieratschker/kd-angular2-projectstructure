@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { TodoRetrievalService } from './../services/todo-retrieval.service';
+
 @Component({
   selector: 'app-todo-list',
   templateUrl: './todo-list.component.html',
@@ -9,15 +11,10 @@ export class TodoListComponent implements OnInit {
 
   todos: string[];
 
-  constructor() { }
-
-  ngOnInit() {
-    this.todos = [
-      "Finish this app!",
-      "Watch the rest of the presentations!",
-      "???",
-      "Profit (Pizza & Beer)"
-    ];
+  constructor(private todoRetrievalService: TodoRetrievalService) {
   }
 
+  ngOnInit() {
+    this.todos = this.todoRetrievalService.getTodos();
+  }
 }

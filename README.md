@@ -7,13 +7,10 @@ We will be creating the shell for small **TODO** application from scratch with t
 
 ## What we are going to do:
 
-1. Use service in component
-    * Short detour into how to use dependency injection
-    * Create data in service 
-2. Create a **todo-detail** component in a second project
+1. Create a **todo-detail** component in a second project
     * Switch to [kd-angular2-components](https://github.com/mnieratschker/kd-angular2-components)
-3. Get components from external project
-4. Use todo-detail component
+2. Get components from external project
+3. Use todo-detail component
 
 ### Extra
 
@@ -80,3 +77,21 @@ We will be creating the shell for small **TODO** application from scratch with t
     ng test
     ```
     * Fix the tests!!!
+1. Use service in component
+    * Add provider to the AppModule
+    ```javascript
+    import { TodoRetrievalService } from './services/todo-retrieval.service';
+    
+    ...
+
+    providers: [
+        TodoRetrievalService
+    ]
+    ```
+    * Implement service
+    * Inject service to component
+    ```javascript
+    constructor(private todoRetrievalService: TodoRetrievalService) {
+    }
+    ```
+    * Use data in component
