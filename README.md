@@ -26,6 +26,7 @@ We will be creating the shell for small **TODO** application from scratch with t
 
 1. Run Tests with/without watches
 0. Build Project for production 
+    * Commands
 
 ## What is finished:
 
