@@ -33,3 +33,11 @@ We will be creating the shell for small **TODO** application from scratch with t
 ```
 npm install -g angular-cli
 ```
+2. Initialize a project with Angular-CLI
+    * Use Angular-CLI in command line (4 real)
+```
+ng new todo_application 
+
+// for presentation purpose 
+ng new todo_application --skip-npm
+``` 
