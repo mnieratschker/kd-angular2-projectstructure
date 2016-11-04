@@ -7,11 +7,6 @@ We will be creating the shell for small **TODO** application from scratch with t
 
 ## What we are going to do:
 
-### Extra
-
-1. Run Tests with/without watches
-0. Build Project for production 
-    * Commands
 
 ## What is finished:
 
@@ -114,3 +109,11 @@ We will be creating the shell for small **TODO** application from scratch with t
     ```html
     <app-todo-detail [todo]="todo"></app-todo-detail>
     ```
+    
+### Extra
+
+1. Run Tests with/without watches
+    * ```ng test --watch=false/true```
+0. Build Project for production 
+    * ```ng build --prod```
+    * ```ng build --prod --bh=base/url```
