@@ -2,10 +2,5 @@
   <h2 class="header white-text">Here shall be your TODO List</h2>
 </div>
 <div *ngFor="let todo of todos" class="row">
-  <div class="col s1">
-    <span class="flow-text">Todo:</span>
-  </div>
-  <div class="col s11">
-    <span class="flow-text">{{todo}}</span>
-  </div>
+  <app-todo-detail [todo]="todo"></app-todo-detail>
 </div>

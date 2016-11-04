@@ -5,13 +5,15 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
+import { TodoDetailComponent } from 'kd-angular2-components';
 
 import { TodoRetrievalService } from './services/todo-retrieval.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TodoListComponent
+    TodoListComponent,
+    TodoDetailComponent
   ],
   imports: [
     BrowserModule,

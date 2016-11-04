@@ -7,8 +7,6 @@ We will be creating the shell for small **TODO** application from scratch with t
 
 ## What we are going to do:
 
-1. Use todo-detail component
-
 ### Extra
 
 1. Run Tests with/without watches
@@ -98,4 +96,21 @@ We will be creating the shell for small **TODO** application from scratch with t
     * Add component destination to package.json
     ```
     "kd-angular2-components": "mnieratschker/kd-angular2-components"
+    ```
+1. Use todo-detail component
+    * Add component to AppModule
+    ```javascript
+    import { TodoDetailComponent } from 'kd-angular2-components';
+    
+    ...
+
+    declarations: [
+        AppComponent,
+        TodoListComponent,
+        TodoDetailComponent
+    ]
+    ```
+    * Add component in html
+    ```html
+    <app-todo-detail [todo]="todo"></app-todo-detail>
     ```
