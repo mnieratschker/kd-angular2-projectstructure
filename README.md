@@ -7,8 +7,7 @@ We will be creating the shell for small **TODO** application from scratch with t
 
 ## What we are going to do:
 
-1. Get components from external project
-2. Use todo-detail component
+1. Use todo-detail component
 
 ### Extra
 
@@ -95,3 +94,8 @@ We will be creating the shell for small **TODO** application from scratch with t
     * Use data in component
 1. Create a **todo-detail** component in a second project
     * Switch to [kd-angular2-components](https://github.com/mnieratschker/kd-angular2-components)
+1. Get components from external project
+    * Add component destination to package.json
+    ```
+    "kd-angular2-components": "mnieratschker/kd-angular2-components"
+    ```
